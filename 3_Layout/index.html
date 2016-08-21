@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Primer ejemplo</title>
+
+	<!--Importando css con colores primarios nuevos.-->
+	<!--<link rel="stylesheet" href="css/material.min.css">-->
+	<link rel="stylesheet" href="css/material.min.colors.css">
+	
+	<!--Agregando fuentes desde servidor de mdl.-->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+	<!--Iconos.-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	
+</head>
+<body>
+	<!--Se define layout que va a contener un header y un tabs.-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">	
+		<!--Se agrega header con estilos (barra de color mdl).-->
+		<header class="mdl-layout__header">
+			<!--Se agrega fila que contendrá el texto.-->
+			<div class="mdl-layout__header-row">
+				<!--Agregando span con texto de header.-->
+				<span class="mdl-layout-title">Página con layout y tabs.</span>
+			</div>
+
+			<!--Agregando barrar de tabs al layout.-->
+			<div class="mdl-layout__tab-bar">
+				<!--Agregando items del menú.-->
+				<a href="#tab-1" class="mdl-layout__tab is-active">Link 1</a>
+				<a href="#tab-2" class="mdl-layout__tab">Link 2</a>
+				<a href="#tab-3" class="mdl-layout__tab">Link 3</a>			
+			</div>
+		</header>
+
+		<!--Agregando contenido del layout.-->
+		<main class="mdl-layout__content">
+			<!-- Agrgando panel del tab 1.-->
+			<section class="mdl-layout__tab-panel" id="tab-1">
+				<!--Agregando página de contenido del tab 1-->
+				<div class="page-content">Tabs 1</div>
+			</section>
+			<!-- Agrgando panel del tab 2.-->
+			<section class="mdl-layout__tab-panel" id="tab-2">
+				<!--Agregando página de contenido del tab 2-->
+				<div class="page-content">Tabs 2</div>
+			</section>
+			<!-- Agrgando panel del tab 3.-->
+			<section class="mdl-layout__tab-panel" id="tab-3">
+				<!--Agregando página de contenido del tab 3-->
+				<div class="page-content">Tabs 3</div>
+			</section>
+		</main>
+	</div>	
+
+	<!--Javascript material design lite.-->
+	<script src="js/material.min.js"></script> 
+</body>
+</html>
